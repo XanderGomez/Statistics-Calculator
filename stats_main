@@ -1,0 +1,32 @@
+from random_prob import *
+import csv
+import os
+
+def options(opt_num):
+    global main_opt_list 
+    main_opt_list = [1,2,3,4]
+
+    if opt_num == 1:
+        print("Please choose an option:\n"
+            "1) Basic Statistics\n"
+            "2) Probabilities\n"
+            "3) Random Distribution Probabilities\n"
+            "4) Quit")
+    elif opt_num == 2:
+        print("Please choose a basic statistics problem you want solved:\n"
+              "1) Mean Median and Mode\n"
+              "2) ")
+
+
+def main():
+    options()
+    choice = int(input("Please choose an option: "))
+    while choice not in main_opt_list:
+        choice = int(input((f"{choice} is not a valid option, please pick again: ")))
+    
+    if choice == 1:
+        pass
+
+
+if __name__ == "__main__":
+    main()
