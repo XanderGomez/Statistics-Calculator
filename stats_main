@@ -1,8 +1,18 @@
+"""Imports all packages as well as other python files included with this program as a whole"""
 from random_prob import *
+from basic_stats import *
 import csv
 import os
 
 def options(opt_num):
+    """
+    This program is used to display options to the user
+
+    opt_num(int): Used to discern which option menu to print
+
+    Returns:
+    N/A
+    """
     global main_opt_list 
     main_opt_list = [1,2,3,4]
 
@@ -19,6 +29,12 @@ def options(opt_num):
 
 
 def main():
+    """
+    Main function to call all other necessary function and perform proper logic
+
+    Returns:
+    N/A
+    """
     options()
     choice = int(input("Please choose an option: "))
     while choice not in main_opt_list:

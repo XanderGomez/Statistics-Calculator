@@ -42,6 +42,23 @@ def mode(num_list):
             cnt_dict[i] = 0
     return max(cnt_dict, key=cnt_dict.get)
 
+def range(num_list):
+    return max(num_list) - min(num_list)
+
+def variance(num_list, avg, opt):
+    if opt == 1:
+        return ((avg) ** 2)/len(num_list)
+    elif opt == 2:
+        return ((avg)**2)/(len(num_list)-1)
+
+def std_dev(vari):
+    return m.sqrt(vari)
+
+def z_score(num, avg, sd):
+    return (num-avg)/sd
+
+
+
 
 def main():
     nums = [9, 30, 20, 2, 3, 9, 2, 9, 9, 10, 20, 32, 11, 33, 22, 56, 1, 23, 5000, 3, 2, 4, 6, 8, 10]
