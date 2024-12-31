@@ -1,6 +1,7 @@
 """Imports all packages as well as other python files included with this program as a whole"""
 from random_prob import *
 from basic_stats import *
+from probability import *
 import csv
 import os
 

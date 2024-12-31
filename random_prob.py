@@ -1,6 +1,4 @@
 import math as m
-import os
-import csv
 
 def expected_value(vals_list, probs_list):
     sum = 0
